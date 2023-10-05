@@ -91,7 +91,7 @@
 }
 
 /* 카테고리 참고 코드 출처: https://lcw126.tistory.com/153 */
-/* 카테고리에 버튼은 동적 버튼 생성으로 구현하면 되지 않을까? */
+
 aside#left{
     float: left;
     width: 100%;
@@ -116,4 +116,13 @@ aside#left ul li:hover{
  
 aside#main{
     float: left;
+}
+
+/* 카테고리에 버튼은 동적 버튼 생성으로 구현하면 되지 않을까? */
+.noticeBtn{
+    width:100%;
+    display: block;
+    background-color: #3f3f3f;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
 }
