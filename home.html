@@ -11,33 +11,38 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="addNoticeButton.js"></script>
+    <script src="add_noticeTag.js"></script>
 </head>
 
 <body>
-    <h1 class="titleArea">알리미</h1>
-    <div class="urlArea">
-        <form>
-            <input type="url" placeholder="추가할 url을 입력하세요">
-            <input type="button" value="추가" onclick="create_noticeBtn();">
-        </form>
-    </div>
-    <div class="component">
-        <div class="categoryArea">
-            <aside id="left">
-                <h4>추가한 게시판</h4>
-                <ul id="tagArea">
+    <div id="wrap">
+        <h1 class="title">알리미</h1>
+        <div class="inputArea">
+            <form class="input">
+                <input type="url" placeholder="추가할 게시판의 url을 입력하세요">
+                <input type="text" placeholder="추가할 게시판의 이름을 입력하세요">
+            </form>
+            <form class="addButton">
+                <input type="button" value="추가" onclick="create_noticeTag();">
+            </form>
+        </div>
+        <div class="boardArea">
+            <div class="board">
+                <aside id="left">
+                    <h3>추가한 게시판</h3>
+                    <ul id="tagArea">
                     <!-- 아래 코드는 일단 필요없음 -->
                     <!-- <li><a href="https://www.gnu.ac.kr/anse/na/ntt/selectNttList.do?mi=3041&bbsId=1383" target="blank">학과 공지사항</a></li>
                     <li><a href="https://www.gnu.ac.kr/dorm/na/ntt/selectNttList.do?mi=7285&bbsId=2489" target="blank">기숙사 공지사항</a></li>
                     <li><a href="./music.html" target="blank">학사 공지사항</a></li>
                     <li><a href="./movie.html" target="blank">도서관 공지사항</a></li> -->
-                </ul>
-            </aside>
+                    </ul>
+                </aside>
+            </div>
+            <section class="noticeArea">
+
+            </section>
         </div>
-        <section class="noticeArea">
-                
-        </section>
     </div>
 </body>
 
