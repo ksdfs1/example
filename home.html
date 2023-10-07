@@ -10,22 +10,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="home_style.css">
     <script src="add_noticeTag.js"></script>
 </head>
 
 <body>
     <div id="wrap">
         <h1 class="title">알리미</h1>
-        <div class="inputArea">
-            <form class="input">
-                <input type="url" placeholder="추가할 게시판의 url을 입력하세요">
-                <input type="text" placeholder="추가할 게시판의 이름을 입력하세요">
-            </form>
-            <form class="addButton">
-                <input type="button" value="추가" onclick="create_noticeTag();">
-            </form>
-        </div>
+        <form class="inputArea" onsubmit="return false">
+            <div class="input">
+                <input id="url" type="url" placeholder="추가할 게시판의 url을 입력하세요">
+                <input id="name" type="text" placeholder="추가할 게시판의 이름을 입력하세요">
+            </div>
+            <div class="addButton">
+                <input type="submit" value="추가하기" id="signUpButton" onclick="create_noticeTag();"></input>
+                <!-- <input type="button" value="추가하기" onclick="create_noticeTag();"> -->
+            </div>
+        </form>
         <div class="boardArea">
             <div class="board">
                 <aside id="left">
