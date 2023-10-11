@@ -32,7 +32,7 @@
 
 .sign_wrap {
     width: 100%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,4 +75,12 @@ form > button {
     font-size: 20px;
     background: #243450;
     color: white;
-}  
+}
+
+#googleLogin {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background: #243450;
+    color: white;
+}
